@@ -1,0 +1,33 @@
+@import 'src/styles.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .searchForm {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 340px;
+
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 700;
+      background: transparent;
+      color: rgb(90, 106, 146);
+
+      &::placeholder {
+        color: rgb(90, 106, 146)
+      }
+
+      &:focus {
+        color: var(--text-color);
+      }
+    }
+  }
+}
+

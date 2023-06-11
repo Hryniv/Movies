@@ -1,0 +1,63 @@
+@import 'src/styles';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+
+  padding: 0 0 20px;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background: var(--card-bg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: var(--text-color);
+
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .poster {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .infoWrapper {
+    padding: 0 20px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .addInfo {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-left: auto;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  .rate {
+    margin-top: auto;
+
+    span {
+      color: rgb(231, 62, 65);
+    }
+  }
+
+}
+
+.wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: rgb(231, 62, 65) 0px 3px 8px;
+}

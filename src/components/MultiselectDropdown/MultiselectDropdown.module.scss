@@ -1,0 +1,74 @@
+@import 'src/styles';
+
+.dropdown {
+  position: relative;
+  background: transparent;
+  color: rgb(90, 106, 146);
+  cursor: pointer;
+
+  height: 100%;
+  padding: 0px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 700;
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    padding: 0 20px;
+  }
+
+  &-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 10px;
+    z-index: 10;
+    overflow-y: auto;
+    max-height: 600px;
+    font-weight: 400;
+    padding: 20px;
+    background: var(--bg-color);
+
+    label {
+      display: flex;
+      column-gap: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    input {
+      cursor: pointer;
+    }
+
+    label:hover {
+      color: rgb(231, 62, 65);
+    }
+
+    .buttons-wrapper {
+      display: flex;
+      column-gap: 10px;
+      margin-bottom: 10px;
+
+      .filter-btn {
+        width: 100%;
+        color: rgb(90, 106, 146);
+        border-color: rgb(90, 106, 146);
+        transition: 0.2s;
+      }
+
+      .filter-btn:hover {
+        color: rgb(231, 62, 65);
+        border-color: rgb(231, 62, 65);
+      }
+
+      .filter-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
